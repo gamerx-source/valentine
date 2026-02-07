@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Valentine 💖&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;style&gt;
+body {
+margin: 0;
+height: 100vh;
+background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Arial, sans-serif;
+overflow: hidden;
+}
+.card {
+background: white;
+padding: 30px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+width: 90%;
+max-width: 350px;
+position: relative;
+}
+h1 {
+color: #ff4d6d;
+margin-bottom: 25px;
+}
+button {
+padding: 12px 25px;
+font-size: 16px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+}
+.yes {
+background: #ff4d6d;
+color: white;
+}
+.no {
+background: #ddd;
+position: absolute;
+left: 20px;
+top: 120px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;card&quot;&gt;
+&lt;h1&gt;💘shamli, will you be my Valentine? 💘&lt;/h1&gt;
+&lt;button class=&quot;yes&quot; onclick=&quot;yesClick()&quot;&gt;Yes ❤️&lt;/button&gt;
+&lt;button class=&quot;no&quot; id=&quot;noBtn&quot;&gt;No 😢&lt;/button&gt;
+&lt;/div&gt;
+&lt;script&gt;
+const noBtn = document.getElementById(&quot;noBtn&quot;);
+const card = document.querySelector(&quot;.card&quot;);
+function randomMove() {
+const maxX = card.clientWidth - noBtn.offsetWidth;
+const maxY = card.clientHeight - noBtn.offsetHeight;
+const x = Math.random() * maxX;
+const y = Math.random() * maxY;
+noBtn.style.left = x + &quot;px&quot;;
+noBtn.style.top = y + &quot;px&quot;;
+}
+// No button keeps moving
+setInterval(randomMove, 700);
+function yesClick() {
+document.body.innerHTML = `
+&lt;div style=&quot;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#ff9a9e;
+color:white;
+text-align:center;
+padding:20px;
+&quot;&gt;
+&lt;h1&gt;💖 Yayyy Shamli! I knew it 😍💖&lt;/h1&gt;
+&lt;img
+src=&quot;https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif&quot;
+alt=&quot;Dancing girl&quot;
+style=&quot;width:250px; margin-top:20px; border-radius:20px;&quot;
+&gt;
+&lt;/div&gt;`;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
